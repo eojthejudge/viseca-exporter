@@ -103,10 +103,10 @@ func getTransactions(cardID, sessionCookie string) (Transactions, error) {
 }
 
 func printTransactions(transactions Transactions) {
-	fmt.Println("\"TransactionID\",\"Date\",\"Merchant\",\"Amount\",\"PFMCategoryID\",\"PFMCategoryName\"")
+	//fmt.Println("\"TransactionID\",\"Date\",\"Merchant\",\"Amount\",\"PFMCategoryID\",\"PFMCategoryName\"")
 
 	for _, v := range transactions.Transactions {
-		fmt.Printf("\"%s\",\"%s\",\"%s\",\"%f\",\"%s\",\"%s\"\n", v.TransactionID, v.Date, getPrettiestMerchantName(v), v.Amount, v.PFMCategory.ID, v.PFMCategory.Name)
+		fmt.Printf("%s;0;;;%s;%f;;vi\n", v.Date, getPrettiestMerchantName(v), v.Amount*-1.0)
 	}
 }
 

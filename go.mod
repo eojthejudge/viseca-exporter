@@ -1,3 +1,3 @@
-module github.com/anothertobi/viseca-exporter
+module github.com/eojthejudge/viseca-exporter
 
 go 1.19

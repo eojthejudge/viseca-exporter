@@ -1,6 +1,7 @@
 # viseca-exporter
 
-Little helper to get transactions from Viseca One and print them in CSV format.
+Little helper to get transactions from Viseca One and print them in CSV format compatible with HomeBank.
+Forked from https://github.com/anothertobi/viseca-exporter
 
 ## Usage
 
